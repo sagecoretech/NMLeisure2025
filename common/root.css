@@ -1,0 +1,46 @@
+/* ================================
+   Color Palette
+   ================================ */
+   :root {
+    /* Primary Colors */
+    --color-primary: #3498db; 
+    --color-secondary: #2ecc71;
+    --color-accent: #e74c3c;
+
+    --color-primary-inverted: #ffffff; 
+    --color-secondary-inverted: #ffffff;
+    --color-accent-inverted: #ffffff;
+
+    /* Neutral Colors */
+    --color-white: #ffffff;
+    --color-light-gray: #f4f4f4;
+    --color-gray: #cccccc;
+    --color-dark-gray: #333333;
+    --color-black: #000000;
+
+    /* Background Colors */
+    --color-background: var(--color-light-gray);
+    --color-background-alt: var(--color-white);
+
+    /* Text Colors */
+    --color-text: var(--color-dark-gray);
+    --color-text-light: var(--color-gray);
+    --color-text-inverted: var(--color-white);
+
+    /* Border Colors */
+    --color-border: var(--color-gray);
+    --color-border-light: var(--color-light-gray);
+    --color-border-dark: var(--color-dark-gray);
+
+    /* Additional Colors */
+    --color-muted: #95a5a6;
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-primary-dark);
+
+    /* Container Sizing */
+    --container-max-width: 90vw;
+    --height-units: 60px;
+    --margin-units: 10px;
+    --padding-units: 5px;
+
+}

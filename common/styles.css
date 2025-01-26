@@ -1,0 +1,396 @@
+/* ================================
+   Basic CSS Reset
+   ================================ */
+/* Remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
+
+h1{
+    font-size: larger;
+}
+
+h2{
+    font-size: large;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.container{
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.container.sm{
+    max-width: calc(var(--container-max-width) * 0.5);
+    margin: 0 auto;
+}
+
+.container.md{
+    max-width: calc(var(--container-max-width) * 0.85);
+    margin: 0 auto;
+}
+
+/* BACKGROUNDS */
+.bg-primary{
+    background-color: var(--color-primary);
+    color: var(--color-primary-inverted);
+}
+
+.bg-secondary{
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-inverted);
+}
+
+.bg-accent{
+    background-color: var(--color-accent);
+    color: var(--color-accent-inverted);
+}
+
+.bg-section {
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* BUTTONS */
+.btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn.primary{
+    background-color: var(--color-primary);
+    color: var(--color-primary-inverted);
+}
+
+.btn.secondary{
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-inverted);
+}
+
+.btn.accent{
+    background-color: var(--color-accent);
+    color: var(--color-accent-inverted);
+}
+
+/* NAVIGATION */
+nav a{
+    color: inherit;
+}
+
+/* TEXT */
+.txt-giant{
+    font-size: x-large;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+.txt-italic{
+    font-style: italic;
+}
+
+/* FLEX */
+.flex{
+    display:flex;
+}
+
+.gap{
+    gap:5px;
+}
+
+.flex.column{
+    flex-direction: column;
+}
+
+.flex.between{
+    justify-content: space-between;
+}
+
+.flex.around{
+    justify-content: space-around;
+}
+
+.flex.center{
+    justify-content: center;
+}
+
+.flex.align-center{
+    align-items: center;
+}
+
+.g-1{
+    gap: var(--padding-units)
+}
+
+.g-2{
+    gap: calc(var(--padding-units) * 2)
+}
+
+.g-3{
+    gap: calc(var(--padding-units) * 3)
+}
+
+/* NAVIGATION */ 
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu .menu-item{
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* HEIGHT LIMITS */
+.h-1{
+    max-height: var(--height-units);
+}
+
+.h-2{
+    max-height: calc(var(--height-units)*2);
+}
+
+.h-3{
+    max-height: calc(var(--height-units)*3);
+}
+
+/* PADDINGS */
+.p-1{
+    padding: var(--padding-units);
+}
+
+.p-2{
+    padding: calc(var(--padding-units)*2);
+}
+
+.p-3{
+    padding: calc(var(--padding-units)*3);
+}
+
+.pt-1{
+    padding-top: var(--padding-units);
+}
+
+.pt-2{
+    padding-top: calc(var(--padding-units)*2);
+}
+
+.pt-3{
+    padding-top: calc(var(--padding-units)*3);
+}
+
+
+.pb-1{
+    padding-bottom: var(--padding-units);
+}
+
+.pb-2{
+    padding-bottom: calc(var(--padding-units)*2);
+}
+
+.pb-3{
+    padding-bottom: calc(var(--padding-units)*3);
+}
+
+/* MARGINS */
+.m-1{
+    margin: var(--margin-units);
+}
+
+.m-2{
+    margin: calc(var(--margin-units)*2);
+}
+
+.m-3{
+    margin: calc(var(--margin-units)*3);
+}
+
+.mt-1{
+    margin-top: var(--margin-units);
+}
+
+.mt-2{
+    margin-top: calc(var(--margin-units)*2);
+}
+
+.mt-3{
+    margin-top: calc(var(--margin-units)*3);
+}
+
+
+.mb-1{
+    margin-bottom: var(--margin-units);
+}
+
+.mb-2{
+    margin-bottom: calc(var(--margin-units)*2);
+}
+
+.mb-3{
+    margin-bottom: calc(var(--margin-units)*3);
+}
+
+/* CAROUSEL */
+.carousel {
+    /* Transition properties for smooth animation */
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* LISTS */
+
+.list li{
+    list-style-type: none;
+}
+
+/* ACCORDION */
+
+/* Accordion Container */
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Item */
+.accordion-item + .accordion-item {
+    border-top: 1px solid #ddd;
+}
+
+/* Accordion Header */
+.accordion-header {
+    width: 100%;
+    background-color: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+    padding: 15px 20px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-header:hover {
+    background-color: #e2e2e2;
+}
+
+/* Accordion Header Icon */
+.accordion-header::after {
+    content: '\25BC'; /* Down arrow */
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon when active */
+.accordion-header.active::after {
+    transform: rotate(180deg);
+}
+
+/* Accordion Content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Active Content */
+.accordion-content.active {
+    max-height: 200px; /* Adjust based on content */
+    padding: 15px 20px;
+}
+
+/* QUOTES */
+
+  figure:has(> blockquote) {
+    background-color: #ededed;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  blockquote p::before {
+    content: '\201C';
+  }
+  
+  blockquote p::after {
+    content: '\201D';
+  }
+  
+  blockquote + p {
+    text-align: right;
+  }
+
+  figcaption{
+    margin-top: 10px;
+    font-size: medium;
+  }
+
+  figure .source-icon {
+	position: relative;
+	display: block;
+	height: 50px;
+	width: 50px;
+	left: -50px;
+	margin-bottom: -50px;
+	top: -30px;
+}
+
+  figure .source-icon img{
+    display: block;
+    width: auto;
+    height: 50px;
+  }
