@@ -4,11 +4,11 @@
    :root {
     /* Primary Colors */
     --color-primary: #ffffff; 
-    --color-secondary: #007681;
-    --color-accent: #007681;
+    --color-secondary: #cacaca;
+    --color-accent: #d57b29;
 
     --color-primary-inverted: #111111; 
-    --color-secondary-inverted: #ffffff;
+    --color-secondary-inverted: #111111;
     --color-accent-inverted: #ffffff;
 
     /* Neutral Colors */

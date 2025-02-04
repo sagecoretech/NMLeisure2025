@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot Spring Spas Albuquerque</title>
+    <title>CareFREE Spas Albuquerque</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,22 +19,27 @@
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Hot Spring Spas of Albuquerque",
+          "name": "CareFREE Spas of Albuquerque",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "6301 Menaul Blvd NE",
+            "streetAddress": " 7004 Menaul Blvd.",
             "addressLocality": "Albuquerque",
             "addressRegion": "NM",
             "postalCode": "87110",
             "addressCountry": "US"
           },
-          "telephone": "+1-505-889-0222"
+          "telephone": "+1-505-889-2999"
         }
         </script>
 
     <style>
+
+
+
         #section1{
             padding:25px;
+            max-width: 1800px;
+            margin: 0 auto;
         }
 
         .section1-a{
@@ -89,7 +94,7 @@
         }
 
         #section3{
-            background-color: var(--color-grey);
+            background-color: var(--color-white);
             color: var(--color-black);
         }
 
@@ -131,11 +136,53 @@
             height: 100px;
             box-shadow: 2px 1px 11px var(--color-accent);
         }
+
+        .main-menu .menu-item {
+            border-right: 1px solid #111;
+            max-height: 25px;
+            padding: 0px 20px;
+        }
+
+        .main-menu .menu-item:last-child {
+            border-right: none !important
+        }
+
+        .sep {
+            width: 100%;
+            border-top: 1px solid var(--color-white);
+            height: 1px;
+            display: block;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .am-w-swim-spas{
+            background: url('./img/swimspas-bucket-new-min.jpg') no-repeat center center; background-blend-mode: overlay; background-color: #333;color: #fff; background-size: cover;
+        }
+ 
+        .am-w-hot-tubs{
+            height:400px; background: url('./img/hottubs-bucket-new-min.jpg') no-repeat center center; background-blend-mode: overlay; background-color: #333;color: #fff; background-size: cover;
+        }
     </style>
         
 </head>
 <body>
-    <header class="bg-secondary" style="padding: 10px 5px;">
+
+    <header class="bg-primary h-2" style="padding: 5px;">
+        <nav class="container flex between align-center">
+            <a href="index.html" class="h-2"> 
+                <img class="h-1" style="width:160px;" src="./img/logo.png" />
+            </a>
+            <section class="main-menu h-1" >
+                <a class="menu-item" href="#home">Home</a>
+                <a class="menu-item" href="#about">Hot Tubs</a>
+                <a class="menu-item" href="#services">Swim Spas</a>
+                <a class="menu-item" href="#contact">Contact</a>
+            </section>
+        </nav>
+    </header>
+
+    <header class="bg-secondary" style="padding: 3px 5px;">
         <nav class="container flex between">
             <address>
                 <a target="_blank" title="Click for Directions" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8" >
@@ -148,51 +195,34 @@
             </span>  
         </nav>
     </header>
-    <header class="bg-primary h-2" style="padding: 5px;">
-        <nav class="container flex between align-center">
-            <a href="index.html" class="h-2"> 
-                <img class="h-1" style="width:160px;" src="./img/logo.svg" />
-            </a>
-            <section class="main-menu h-1" >
-                <a class="menu-item" href="#home">Home</a>
-                <a class="menu-item" href="#about">Hot Tubs</a>
-                <a class="menu-item" href="#services">Swim Spas</a>
-                <a class="menu-item btn accent" href="#contact">Contact</a>
+
+    <section class="grid uniform" style="gap:0px" >
+        <div class="col-md-6 col-lg-8" >
+            <section id="section1" class="section1-a carousel" data-interval="3500" data-carousel="section1-a,section1-b,section1-c,section1-d,section1-e" style="margin-top: 0px; min-height: 60vh;">
+        
             </section>
-        </nav>
-    </header>
-
-    <section id="section1" class="section1-a carousel" data-interval="3500" data-carousel="section1-a,section1-b,section1-c,section1-d,section1-e" style="margin-top: 0px; min-height: 60vh;">
-        
-    </section>
-
-    <section class="container">
-        
-        <div class="bg-accent  txt-center animate-in" id="intro" >
+        </div>
+        <div class="col-md-6 col-lg-4 bg-accent p-3" >
      
-            <h1 class="txt-giant">Welcome to Hot Spring Spas of Albuquerque</h1>
-            <h2 class="txt-italic">Celebrating 40 Years of Excellence!</h2>
+                <h1 class="txt-giant">Welcome to CareFREE Spas of Albuquerque</h1>
+                <h2 class="txt-italic">Celebrating 40 Years of Excellence!</h2>
+    
+                <span class="sep" ></span>
 
-        </div>
-
-    </section>
-
-    <section class="container sm animate-in">
-        <div class="txt-center" >
-            <h3 class="txt-giant">We are dedicated to providing the highest quality hot tubs, swim spas, and accessories to the Albuquerque community.</h3>
-            <h4 style="margin-top: 10px;">Since 1985, our mission is to enhance your lifestyle with top quality hot tubs & swim spas.</h4>
+                <h3 class="txt-giant">We are dedicated to providing the highest quality hot tubs, swim spas, and accessories to the Albuquerque community.</h3>
+                <h4 style="margin-top: 10px;">Since 1985, our mission is to enhance your lifestyle with top quality hot tubs & swim spas.</h4>
         </div>
     </section>
 
-    <section class="container mt-3 flex center g-3" >
-        <div style="max-width: min(250px, 100%);">
-            <p class="txt-giant txt-italic">Why customers <br /> choose Hot Spring Spas</p>
+    <section class="container mt-3 g-3 grid" >
+        <div class="col-md-4">
+            <p class="txt-giant txt-italic mb-2">Why customers <br /> choose CareFREE Spas</p>
 
             <figure class="slide-left">
-                <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
+                <a href="https://g.page/r/CbqKPhD4oQaLEAg/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
 
                 <blockquote>
-                    <p>Hot springs spa is #1. Had to call Tony on Xmas Eve and NYE for some maintenance questions. He is always so helpful and kind! When you buy your spa here not only do you get a top spa but you also get an A+ relationship! Have never had such amazing ongoing service.</p>
+                    <p>CareFREEs spa is #1. Had to call Tony on Xmas Eve and NYE for some maintenance questions. He is always so helpful and kind! When you buy your spa here not only do you get a top spa but you also get an A+ relationship! Have never had such amazing ongoing service.</p>
                 </blockquote>
                 <figcaption>
                     — <cite class="author">Michael W.</cite>
@@ -200,7 +230,7 @@
             </figure>
             
             <figure  class="slide-left">
-                <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
+                <a href="https://g.page/r/CbqKPhD4oQaLEAg/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
 
                 <blockquote>
                     <p>My parents bought a tub and had such a great experience that we decided to buy one too! Tony was awesome from initial inquiry to final install and set up! If you are thinking about a hot tub, look no further!</p>
@@ -210,12 +240,11 @@
                 </figcaption>
             </figure>
 
-            <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="btn link" target="_blank" >More Reviews on Google</a>
-
+            <a href="https://g.page/r/CbqKPhD4oQaLEAg/review" class="btn link" target="_blank" >More Reviews on Google</a>
 
         </div>
         
-        <div>
+        <div class="col-md-4">
             <div class="accordion">
                 <div class="accordion-item">
                     <button class="accordion-header">
@@ -230,7 +259,7 @@
                         <strong class="txt-giant">Premium Quality Products:</strong>
                     </button>
                     <div class="accordion-content">
-                        <p>Offers a wide selection of high-end Hot Spring hot tubs and swim spas.</p>
+                        <p>Offers a wide selection of high-end CareFREE hot tubs and swim spas.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -300,69 +329,44 @@
             </div>
             
         </div>
+
+        <div  class="col-md-4 p-3 animate-in" >
+            <div style="border-radius: 50%;overflow: hidden; background: url('./img/section3.jpg') no-repeat center center; background-size: cover; height:500px; width: 500px;"></div>
+        </div>
     </section>
 
 
     <section id="section2" class="bg-section mt-3 p-3" style="min-height: 60vh;">
         <div class="container" >
-            <section class="grid mt-3 mb-3 pb-3" style="border-bottom: 1px solid #ccc;">
-                <div class="col-md-4 slide-left" >
-                    <img src="./img/logo.svg" class="img-w150" >
-                    <h2>THE SMARTEST SALT WATER SYSTEM ON THE PLANET</h2>
-                    <p>Introducing FreshWater® IQ</p>
-                </div>
-                <div class="col-md-4 slide-left" >
-                    <p> FreshWater IQ is a smart, in-line water care system that automatically tests your spa water and displays clear instructions to simplify water maintenance. Now you can tell at a glance when chemicals are needed, taking the guesswork out of keeping your spa water balanced and ready to enjoy. </p>
-                    <p class="txt-large mt-2" ><b>Works with all 3 collections:</b></p>
-                </div>
-                <div class="col-md-4 slide-left flex center" >
-                    <img src="./img/hexagon-infograph.svg" style="max-width: 370px;" />
-                </div>
+            <section class="flex center animate-in" >
+                <img src="./img/american-whirlpool.png" class="img-w150" >
             </section>
+
             <section class="grid txt-center mt-3" >
-                <div class="col-md-4 slide-left" >
-                    <h4>Shop Highlife® Collection</h4>
-                    <small>~ LUXURY ~</small>
-                    <p>Our best, to unleash your best.</p>
-                    <img class="responsive" src="./img/Highlife.webp" />
+
+                <div class="col-md-3 animate-in flex center align-center am-w-hot-tubs" >
+                    <h4 class="txt-giant">Shop Hot Tubs</h4>
                 </div> 
-                <div class="col-md-4 animate-in" >
-                    <h4>Shop Limelight® Collection</h4>
-                    <small>~ PREMIUM ~</small>
-                    <p>Advanced design and features. A cut above. </p>
-                    <img class="responsive" src="./img/limelight.webp" />
+                
+                <div class="col-md-3 animate-in flex center align-center am-w-swim-spas">
+                    <h4 class="txt-giant">Shop Swim Spas</h4>
                 </div> 
-                <div class="col-md-4 slide-right" >
-                    <h4>Shop Hot Spot® Collection</h4>
-                    <small>~ VALUE ~</small>
-                    <p>Quality, performance, and value. </p>
-                    <img class="responsive" src="./img/Highlife.webp" />
-                </div> 
+
+                <div class="col-md-3 p-3 txt-right" >
+                    <h1 clas="txt-giant">DOWNLOAD OUR</h1>
+                    <h2 class="txt-accent">Buyer's Guide</h2>
+                    <p>Learn how to find the best hot tub to fit your budget and needs with our free hot tub buyer's guide. Get it today!</p>
+                    <a href="#" class="btn accent mt-1" >Get My FREE Guide</a>
+                </div>
+                <div class="col-md-3 txt-left" >
+                    <img src="./img/hottub-buyers-guide-cover-min.png" style="height:395px">
+                </div>
+
             </section>
         </div>
     </section>
 
-    <!--<section id="section3" class="bg-section p-3" style="min-height: 60vh;">
-        <div class="container" >
-            <section class="flex center animate-in" >
-                <img src="./img/freeflow.avif" class="img-w150" >
-            </section>
-            <section class="grid txt-center mt-3" >
-                <div class="col-md-6 slide-left" >
-                    <h4>Shop Premier Collection</h4>
-                    <small>~ PREMIUM ~</small>
-                    <p>Hot tubbing with a touch of elegance.</p>
-                    <img class="responsive mt-1" src="./img/freeflow-premier.webp" />
-                </div> 
-                <div class="col-md-6 slide-right" >
-                    <h4>Shop Sport Collection</h4>
-                    <small>~ VALUE ~</small>
-                    <p>Durable, energy efficient, portable & affordable!</p>
-                    <img class="responsive mt-1" src="./img/freeflow-sport.png" />
-                </div> 
-            </section>
-        </div>
-    </section>
+
 
     <section id="section4" class="bg-section p-3" style="min-height: 60vh;">
         <div class="container" >
@@ -400,58 +404,73 @@
                 </div> 
             </section>
         </div>
-    </section>-->
+    </section>
 
-    <section id="section5" class="bg-section p-3" style="min-height: 60vh;">
+    <section id="section3" class="bg-section p-3" style="min-height: 60vh;">
         <div class="container" >
             <section class="flex center animate-in" >
-                <img src="./img/endless-pools-logo-white-new.webp" class="img-w150" >
+                <img src="./img/vitaspalogo.png" class="img-w150" >
             </section>
             <section class="grid txt-center mt-3" >
-                <h5 class="txt-giant">Swim-in-place, exercise and relax.</h5>
-                <p>Learn about the products, technology, and unparalleled versatility of an Endless™ Pool for your life and home.</p>
+                <div class="col-md-3 slide-left" >
+                    <h4>Shop 700 Series</h4>
+                    <img class="responsive mt-1" src="./img/vitaspa-homepage-700series2.jpg" />
+                </div> 
+                <div class="col-md-3 slide-left" >
+                    <h4>Shop 500 Series</h4>
+                    <img class="responsive mt-1" src="./img/vitaspa-homepage-500series2.jpg" />
+                </div> 
+                <div class="col-md-3 slide-left" >
+                    <h4>Shop 300 Series</h4>
+                    <img class="responsive mt-1" src="./img/vitaspa-homepage-300series2.jpg" />
+                </div> 
+                <div class="col-md-3 slide-left" >
+                    <h4>Shop 100 Series</h4>
+                    <img class="responsive mt-1" src="./img/vitaspa-homepage-100series2.jpg" />
+                </div> 
             </section>
         </div>
     </section>
 
+
     <section id="rating" class="container md animate-in p-3">
         <div class="txt-center" >
-            <h4 class="txt-giant">Hot Spring Spa of Albuquerque is rated<br /><span class="txt-accent" >5.0</span> based on over 137 reviews on Google</h4>
+            <h4 class="txt-giant">CareFREE Spa of Albuquerque is rated<br /><span class="txt-accent" >5.0</span> based on over 247 reviews on Google</h4>
             <a href="https://g.co/kgs/rrmwXvQ" target="_blank" ><img class="img-w300 mt-2" src="img/5star.png" ></a>
         </div>
 
         <div class="grid uniform" >
             
             <figure class="slide-left col-md-12 col-lg-4" >
-                <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
+                <a href="https://g.page/r/CbqKPhD4oQaLEAg/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
 
                 <blockquote>
-                    <p>Everything from sales to service to installation was super fantastic! We love our spa!</p>
+                    <p>Shane was super knowledgeable and friendly! We just moved into a new place that has a hot tub and we're a little clueless on how to maintain it.  Feeling super confident after chatting with Shane and understanding what we needed.  Left with ph strips, shock and some Epsom salts</p>
                 </blockquote>
                 <figcaption>
-                    — <cite class="author">Mawgie A.</cite>
+                    — <cite class="author">Stesha C.</cite>
                 </figcaption>
             </figure>
    
             <figure class="slide-left col-md-12 col-lg-4" >
-                <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
+                <a href="https://g.page/r/CbqKPhD4oQaLEAg/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
 
                 <blockquote>
-                    <p>Great Company and Service...friendly, efficient, great suggestions and recommendations. Have had my tub, from them, over 6 years, and had only one maintenance issue that needed to be addressed. That issue was taken care of immediately, and was cost effective.</p>
+                    <p>We chose Carefree Spas based on a friend's recommendation and we were not disappointed! Shane was so helpful and patient in answering our many questions. Delivery and set up went very smoothly. We've recommended Shane and Carefree to other friends and would work with them again!</p>
                 </blockquote>
                 <figcaption>
-                    — <cite class="author">Diane DF.</cite>
+                    — <cite class="author">Janet K.</cite>
                 </figcaption>
             </figure>
 
             <figure class="slide-left col-md-12 col-lg-4" >
-                <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
+                <a href="https://g.page/r/CbqKPhD4oQaLEAg/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
 
                 <blockquote>
-                    <p>My husband and I purchased a house with a hot tub that wasn’t running for many months. We were also complete novices with hot tubs. The staff member at Hot Springs in Albuquerque was extremely knowledgeable and professional in assisting with the proper cleaning and chemicals needed to get our hot tub operational! He made something that seemed difficult actually pretty easy!</p>
+                    <p>Absolutely love our hot tub and the customer service is phenomenal!!!! Shane is knowledgeable and such a help. We love our hot tub!!!</p>
                 </blockquote>
                 <figcaption>
-                    — <cite class="author">Lisa T.</cite>
+                    — <cite class="author">Stacy S.</cite>
                 </figcaption>
             </figure>          
         </div>
@@ -503,7 +522,7 @@
     </section>
 
     <section id="follow" class="bg-secondary p-3 txt-center" >
-        <h5 class="txt-large">Follow Hot Spring Spas of Albuquerque</h5>
+        <h5 class="txt-large">Follow CareFREE Spas of Albuquerque</h5>
         <div class="flex g-3 evenly mt-2" >
             <a href="#" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -516,7 +535,7 @@
     <footer class="bg-primary p-3" >
         <div class="grid">
             <div class="col-md-3" >
-                <img src="./img/logo.svg" style="width: 250px;" />
+                <img src="./img/logo.png" style="width: 250px;" />
             </div>
             <div class="col-md-6" >
                 <address>

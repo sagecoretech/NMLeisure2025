@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot Spring Spas Albuquerque</title>
+    <title>Caldera Spas Albuquerque</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,52 +19,45 @@
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Hot Spring Spas of Albuquerque",
+          "name": "Caldera Spas of Albuquerque",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "6301 Menaul Blvd NE",
+            "streetAddress": "5310 Menaul Blvd NE Building A.",
             "addressLocality": "Albuquerque",
             "addressRegion": "NM",
             "postalCode": "87110",
             "addressCountry": "US"
           },
-          "telephone": "+1-505-889-0222"
+          "telephone": "+1-505-889-9722" 
         }
         </script>
 
     <style>
         #section1{
             padding:25px;
+            background-blend-mode: overlay;
+            background-color: #4d4d4d;
+            min-height: 80vh !important;
+ 
+            place-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        #section1 h1{
+            font-size: 48px;
+        }
+
+        #section1 h2{
+            font-size: 38px;
         }
 
         .section1-a{
             background-image: url("img/abq-bg-1.jpg");
         }
 
-        .section1-a:before,
-        .section1-b:before,
-        .section1-c:before{
-            content: "Hot Tubs";
-            position: relative;
-            height:auto;
-            width: 100%;
-            background-color: var(--color-accent);
-            padding: 10px;
-            color: var(--color-accent-inverted);
-            border-radius: 20px;
-        }
-
-        .section1-d:before,
-        .section1-e:before{
-            content: "Swim Spas";
-            position: relative;
-            height:auto;
-            width: 100%;
-            background-color: var(--color-accent);
-            padding: 10px;
-            color: var(--color-accent-inverted);
-            border-radius: 20px;
-        }
+       
 
         .section1-b{
             background-image: url("img/abq-bg-2.jpg");
@@ -131,27 +124,26 @@
             height: 100px;
             box-shadow: 2px 1px 11px var(--color-accent);
         }
+
+        #main-header {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.74);
+            width: 100%;
+            z-index: 9999;
+            color: black;
+            padding: 15px 10px;
+        }
+        
+
     </style>
         
 </head>
 <body>
-    <header class="bg-secondary" style="padding: 10px 5px;">
-        <nav class="container flex between">
-            <address>
-                <a target="_blank" title="Click for Directions" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8" >
-                    6301 Menaul Blvd NE
-                    Albuquerque, NM 87110
-                </a>     
-            </address> 
-            <span>
-                <a href="tel:+5058890222">(505) 889-0222</a>
-            </span>  
-        </nav>
-    </header>
-    <header class="bg-primary h-2" style="padding: 5px;">
+
+    <header id="main-header" class="bg-primary h-2">
         <nav class="container flex between align-center">
             <a href="index.html" class="h-2"> 
-                <img class="h-1" style="width:160px;" src="./img/logo.svg" />
+                <img class="h-1" style="width:260px;" src="./img/caldera.webp" />
             </a>
             <section class="main-menu h-1" >
                 <a class="menu-item" href="#home">Home</a>
@@ -163,36 +155,38 @@
     </header>
 
     <section id="section1" class="section1-a carousel" data-interval="3500" data-carousel="section1-a,section1-b,section1-c,section1-d,section1-e" style="margin-top: 0px; min-height: 60vh;">
-        
+        <h1>Bring Wellness Home</h1>
+        <h2>Albuquerque's Hot Tub & Swim Spa Retailer</h2>
+        <h3>Celebrating our 40th Anniversary!</h3>
+        <a href="#" class="btn white mt-2" >Explore</a>
     </section>
 
-    <section class="container">
-        
-        <div class="bg-accent  txt-center animate-in" id="intro" >
-     
-            <h1 class="txt-giant">Welcome to Hot Spring Spas of Albuquerque</h1>
-            <h2 class="txt-italic">Celebrating 40 Years of Excellence!</h2>
-
-        </div>
-
-    </section>
-
-    <section class="container sm animate-in">
-        <div class="txt-center" >
+    <section class="container sm animate-in ">
+        <div class="txt-center mt-3" >
             <h3 class="txt-giant">We are dedicated to providing the highest quality hot tubs, swim spas, and accessories to the Albuquerque community.</h3>
             <h4 style="margin-top: 10px;">Since 1985, our mission is to enhance your lifestyle with top quality hot tubs & swim spas.</h4>
         </div>
+
+        <div class="grid mt-2 uniform" >
+            <section class="col-md-6 m-2 flex center align-center" style="background: url('./img/section3.jpg'); min-height: 300px; background-size: cover; background-blend-mode: overlay; background-color: #333; color: #fff;" >
+                <h3>Shop Hot Tubs</h3>
+            </section>
+            <section class="col-md-6 m-2 flex center align-center" style="background: url('./img/swim-spas-endless-confirm-rights.webp'); min-height: 300px; background-size: cover; background-blend-mode: overlay; background-color: #333; color: #fff;" >
+                <h3>Shop Swim Spas</h3>
+            </section>
+        </div>  
+
     </section>
 
-    <section class="container mt-3 flex center g-3" >
+   <!-- <section class="container mt-3 flex center g-3" >
         <div style="max-width: min(250px, 100%);">
-            <p class="txt-giant txt-italic">Why customers <br /> choose Hot Spring Spas</p>
+            <p class="txt-giant txt-italic">Why customers <br /> choose Caldera Spas</p>
 
             <figure class="slide-left">
                 <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
 
                 <blockquote>
-                    <p>Hot springs spa is #1. Had to call Tony on Xmas Eve and NYE for some maintenance questions. He is always so helpful and kind! When you buy your spa here not only do you get a top spa but you also get an A+ relationship! Have never had such amazing ongoing service.</p>
+                    <p>Calderas spa is #1. Had to call Tony on Xmas Eve and NYE for some maintenance questions. He is always so helpful and kind! When you buy your spa here not only do you get a top spa but you also get an A+ relationship! Have never had such amazing ongoing service.</p>
                 </blockquote>
                 <figcaption>
                     — <cite class="author">Michael W.</cite>
@@ -230,7 +224,7 @@
                         <strong class="txt-giant">Premium Quality Products:</strong>
                     </button>
                     <div class="accordion-content">
-                        <p>Offers a wide selection of high-end Hot Spring hot tubs and swim spas.</p>
+                        <p>Offers a wide selection of high-end Caldera hot tubs and swim spas.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -301,64 +295,50 @@
             
         </div>
     </section>
-
+-->
 
     <section id="section2" class="bg-section mt-3 p-3" style="min-height: 60vh;">
-        <div class="container" >
-            <section class="grid mt-3 mb-3 pb-3" style="border-bottom: 1px solid #ccc;">
-                <div class="col-md-4 slide-left" >
-                    <img src="./img/logo.svg" class="img-w150" >
-                    <h2>THE SMARTEST SALT WATER SYSTEM ON THE PLANET</h2>
-                    <p>Introducing FreshWater® IQ</p>
-                </div>
-                <div class="col-md-4 slide-left" >
-                    <p> FreshWater IQ is a smart, in-line water care system that automatically tests your spa water and displays clear instructions to simplify water maintenance. Now you can tell at a glance when chemicals are needed, taking the guesswork out of keeping your spa water balanced and ready to enjoy. </p>
-                    <p class="txt-large mt-2" ><b>Works with all 3 collections:</b></p>
-                </div>
-                <div class="col-md-4 slide-left flex center" >
-                    <img src="./img/hexagon-infograph.svg" style="max-width: 370px;" />
-                </div>
+        <div class="container sm" >
+            <section class="mt-3 mb-3 pb-3 center txt-center" style="border-bottom: 1px solid #ccc;">
+                <img src="./img/passion.png" class="img-w150" >
             </section>
             <section class="grid txt-center mt-3" >
-                <div class="col-md-4 slide-left" >
-                    <h4>Shop Highlife® Collection</h4>
-                    <small>~ LUXURY ~</small>
-                    <p>Our best, to unleash your best.</p>
-                    <img class="responsive" src="./img/Highlife.webp" />
+                <div class="col-md-4 slide-left m-2" >
+                    <h4>Shop Activity series</h4>
+                    <img class="responsive mt-1" src="./img/passion-swim-250-inch.png" />
                 </div> 
-                <div class="col-md-4 animate-in" >
-                    <h4>Shop Limelight® Collection</h4>
-                    <small>~ PREMIUM ~</small>
-                    <p>Advanced design and features. A cut above. </p>
-                    <img class="responsive" src="./img/limelight.webp" />
+                <div class="col-md-4 slide-left m-2" >
+                    <h4>Shop Dynamic series</h4>
+                    <img class="responsive mt-1" src="./img/passion-swim-150-inch.png" />
                 </div> 
-                <div class="col-md-4 slide-right" >
-                    <h4>Shop Hot Spot® Collection</h4>
-                    <small>~ VALUE ~</small>
-                    <p>Quality, performance, and value. </p>
-                    <img class="responsive" src="./img/Highlife.webp" />
+                <div class="col-md-4 slide-left m-2" >
+                    <h4>Shop Fitness series</h4>
+                    <img class="responsive mt-1" src="./img/passion-swim-60-inch.png" />
                 </div> 
             </section>
         </div>
     </section>
 
-    <!--<section id="section3" class="bg-section p-3" style="min-height: 60vh;">
-        <div class="container" >
+   <section id="section3" class="bg-section p-3" style="min-height: 60vh;">
+        <div class="container md" >
             <section class="flex center animate-in" >
-                <img src="./img/freeflow.avif" class="img-w150" >
+                <img src="./img/caldera.webp" class="img-w150" >
             </section>
             <section class="grid txt-center mt-3" >
-                <div class="col-md-6 slide-left" >
-                    <h4>Shop Premier Collection</h4>
-                    <small>~ PREMIUM ~</small>
-                    <p>Hot tubbing with a touch of elegance.</p>
-                    <img class="responsive mt-1" src="./img/freeflow-premier.webp" />
+                <div class="col-md-4 slide-left m-2" >
+                    <h4>Shop Utopia® series</h4>
+                    <p>Visually stunning. Hydrotherapy powerhouse. These hot tubs are the very best of Caldera.</p>
+                    <img class="responsive mt-1" src="./img/caldera-spas-utopia-model-home-page.jpg" />
                 </div> 
-                <div class="col-md-6 slide-right" >
-                    <h4>Shop Sport Collection</h4>
-                    <small>~ VALUE ~</small>
-                    <p>Durable, energy efficient, portable & affordable!</p>
-                    <img class="responsive mt-1" src="./img/freeflow-sport.png" />
+                <div class="col-md-4 slide-left m-2" >
+                    <h4>Shop Paradise® series</h4>
+                    <p>A beautiful blend of practical and premium, designed to deliver your daily Caldera Spas ritual in a remarkable way.</p>
+                    <img class="responsive mt-1" src="./img/caldera-spas-paradise-series-composite-desktop.jpg" />
+                </div> 
+                <div class="col-md-4 slide-left m-2" >
+                    <h4>Shop Vacanza® series</h4>
+                    <p>Caldera comfort. Caldera details. Caldera quality. All available at an exceptional value.</p>
+                    <img class="responsive mt-1" src="./img/caldera-spas-vacanza-series-composite-desktop.jpg" />
                 </div> 
             </section>
         </div>
@@ -400,7 +380,7 @@
                 </div> 
             </section>
         </div>
-    </section>-->
+    </section>
 
     <section id="section5" class="bg-section p-3" style="min-height: 60vh;">
         <div class="container" >
@@ -416,8 +396,8 @@
 
     <section id="rating" class="container md animate-in p-3">
         <div class="txt-center" >
-            <h4 class="txt-giant">Hot Spring Spa of Albuquerque is rated<br /><span class="txt-accent" >5.0</span> based on over 137 reviews on Google</h4>
-            <a href="https://g.co/kgs/rrmwXvQ" target="_blank" ><img class="img-w300 mt-2" src="img/5star.png" ></a>
+            <h4 class="txt-giant">Caldera Spa of Albuquerque is rated<br /><span class="txt-accent" >5.0</span> based on over 256 reviews on Google</h4>
+            <a href="https://g.co/kgs/XWPTb1k" target="_blank" ><img class="img-w300 mt-2" src="img/5star.png" ></a>
         </div>
 
         <div class="grid uniform" >
@@ -448,7 +428,7 @@
                 <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
 
                 <blockquote>
-                    <p>My husband and I purchased a house with a hot tub that wasn’t running for many months. We were also complete novices with hot tubs. The staff member at Hot Springs in Albuquerque was extremely knowledgeable and professional in assisting with the proper cleaning and chemicals needed to get our hot tub operational! He made something that seemed difficult actually pretty easy!</p>
+                    <p>My husband and I purchased a house with a hot tub that wasn’t running for many months. We were also complete novices with hot tubs. The staff member at Calderas in Albuquerque was extremely knowledgeable and professional in assisting with the proper cleaning and chemicals needed to get our hot tub operational! He made something that seemed difficult actually pretty easy!</p>
                 </blockquote>
                 <figcaption>
                     — <cite class="author">Lisa T.</cite>
@@ -457,8 +437,8 @@
         </div>
 
         <div class="mt-3 flex g-1 center" >
-            <a href="https://g.co/kgs/rrmwXvQ" class="btn primary" target="_blank" >More Reviews</a>
-            <a href="https://g.co/kgs/rrmwXvQ" class="btn accent" target="_blank" >Leave us a Review</a>
+            <a href="https://g.co/kgs/XWPTb1k" class="btn primary" target="_blank" >More Reviews</a>
+            <a href="https://g.co/kgs/XWPTb1k" class="btn accent" target="_blank" >Leave us a Review</a>
         </div>
 
     </section>
@@ -503,7 +483,7 @@
     </section>
 
     <section id="follow" class="bg-secondary p-3 txt-center" >
-        <h5 class="txt-large">Follow Hot Spring Spas of Albuquerque</h5>
+        <h5 class="txt-large">Follow Caldera Spas of Albuquerque</h5>
         <div class="flex g-3 evenly mt-2" >
             <a href="#" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-facebook" viewBox="0 0 16 16">

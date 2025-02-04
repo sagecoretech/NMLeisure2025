@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 next = 0
             }
 
-            el.style.opacity = 0;
+            el.style.opacity = 0.5;
             await wait(450)
 
             el.classList.remove(currentClass)
