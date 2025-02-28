@@ -54,7 +54,7 @@ button:hover {
 }
 
 /* COMMON */
-#sectionsisters img{
+.sectionsisters img{
     object-fit: contain;
     height:70px; 
     width: 100%;
@@ -62,7 +62,7 @@ button:hover {
 
 @media (max-width: 576px) {
 
-    #sectionsisters img{
+    .sectionsisters img{
         object-fit: contain;
         height:auto; 
         width: 100%;
@@ -416,7 +416,7 @@ nav a{
 
 /* Active Content */
 .accordion-content.active {
-    max-height: 200px; /* Adjust based on content */
+    max-height: 2000px; /* Adjust based on content */
     padding: 15px 20px;
 }
 
