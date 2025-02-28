@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="./root.css">
     <link rel="stylesheet" href="../common/styles.css">
 
@@ -35,6 +37,7 @@
     <style>
         #section1{
             padding:25px;
+            min-height: max(600px,80vh) !important;
         }
 
         .section1-a{
@@ -124,12 +127,9 @@
         }
 
         #intro {
-            border-radius: 15px;
-            padding: 10px;
-            position: relative;
-            top: -50px;
-            height: 100px;
+            padding: 50px;
             box-shadow: 2px 1px 11px var(--color-accent);
+            margin: 0px 0px 40px 0px;
         }
     </style>
         
@@ -139,12 +139,12 @@
         <nav class="container flex between">
             <address>
                 <a target="_blank" title="Click for Directions" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8" >
-                    6301 Menaul Blvd NE
-                    Albuquerque, NM 87110
+                    <i class="bi bi-geo-alt-fill"></i> <span class="ds-none-sm">6301 Menaul Blvd NE</span>
+                    <span class="ds-none-sm">Albuquerque, NM 87110</span>
                 </a>     
             </address> 
             <span>
-                <a href="tel:+5058890222">(505) 889-0222</a>
+                <a href="tel:+5058890222"><i class="bi bi-phone-fill"></i> (505) 889-0222</a>
             </span>  
         </nav>
     </header>
@@ -153,7 +153,7 @@
             <a href="index.html" class="h-2"> 
                 <img class="h-1" style="width:160px;" src="./img/logo.svg" />
             </a>
-            <section class="main-menu h-1" >
+            <section class="main-menu h-1  ds-none-md" >
                 <a class="menu-item" href="#home">Home</a>
                 <a class="menu-item" href="#about">Hot Tubs</a>
                 <a class="menu-item" href="#services">Swim Spas</a>
@@ -166,139 +166,115 @@
         
     </section>
 
-    <section class="container">
-        
-        <div class="bg-accent  txt-center animate-in" id="intro" >
+    <div class="bg-accent  txt-center animate-in" id="intro" >
      
-            <h1 class="txt-giant">Welcome to Hot Spring Spas of Albuquerque</h1>
-            <h2 class="txt-italic">Celebrating 40 Years of Excellence!</h2>
+        <h1 class="txt-giant">Welcome to Hot Spring Spas of Albuquerque</h1>
+        <h2 class="txt-italic">Celebrating 40 Years of Excellence!</h2>
 
-        </div>
+    </div>
 
-    </section>
-
-    <section class="container sm animate-in">
+    <section class="container md animate-in p-1">
         <div class="txt-center" >
             <h3 class="txt-giant">We are dedicated to providing the highest quality hot tubs, swim spas, and accessories to the Albuquerque community.</h3>
             <h4 style="margin-top: 10px;">Since 1985, our mission is to enhance your lifestyle with top quality hot tubs & swim spas.</h4>
         </div>
     </section>
 
-    <section class="container mt-3 flex center g-3" >
-        <div style="max-width: min(250px, 100%);">
-            <p class="txt-giant txt-italic">Why customers <br /> choose Hot Spring Spas</p>
+    <section class="container mt-3 g-3" >
+        <p class="txt-giant txt-italic mb-2">Why customers <br /> choose Hot Spring Spas</p>
 
-            <figure class="slide-left">
-                <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
+        <div class="grid">
 
-                <blockquote>
-                    <p>Hot springs spa is #1. Had to call Tony on Xmas Eve and NYE for some maintenance questions. He is always so helpful and kind! When you buy your spa here not only do you get a top spa but you also get an A+ relationship! Have never had such amazing ongoing service.</p>
-                </blockquote>
-                <figcaption>
-                    — <cite class="author">Michael W.</cite>
-                </figcaption>
-            </figure>
-            
-            <figure  class="slide-left">
-                <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
+            <div class="col-md-12 col-lg-4" >
+                <figure class="slide-left">
+                    <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
+    
+                    <blockquote>
+                        <p>Hot springs spa is #1. Had to call Tony on Xmas Eve and NYE for some maintenance questions. He is always so helpful and kind! When you buy your spa here not only do you get a top spa but you also get an A+ relationship! Have never had such amazing ongoing service.</p>
+                    </blockquote>
+                    <figcaption>
+                        — <cite class="author">Michael W.</cite>
+                    </figcaption>
+                </figure>
+                
+                <figure  class="slide-left">
+                    <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="source-icon" target="_blank" ><img src="./img/google_g_icon_download.png" ></a>
+    
+                    <blockquote>
+                        <p>My parents bought a tub and had such a great experience that we decided to buy one too! Tony was awesome from initial inquiry to final install and set up! If you are thinking about a hot tub, look no further!</p>
+                    </blockquote>
+                    <figcaption>
+                        — <cite class="author">Rudy P.</cite>
+                    </figcaption>
+                </figure>
+    
+                <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="btn link" target="_blank" >More Reviews on Google</a>
+            </div>
 
-                <blockquote>
-                    <p>My parents bought a tub and had such a great experience that we decided to buy one too! Tony was awesome from initial inquiry to final install and set up! If you are thinking about a hot tub, look no further!</p>
-                </blockquote>
-                <figcaption>
-                    — <cite class="author">Rudy P.</cite>
-                </figcaption>
-            </figure>
-
-            <a href="https://g.page/r/CQpWyaLaQA_0EBM/review" class="btn link" target="_blank" >More Reviews on Google</a>
-
-
-        </div>
-        
-        <div>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">40 Years of Expertise:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Trusted locally owned and operated business since 1985.</p>
+            <div class="col-md-12 col-lg-8" >
+                <div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <strong class="txt-giant">40 Years of Expertise:</strong>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Trusted locally owned and operated business since 1985.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <strong class="txt-giant">Premium Quality Products:</strong>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Offers a wide selection of high-end Hot Spring hot tubs and swim spas.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <strong class="txt-giant">Personalized Service:</strong>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Our knowledgeable staff provide tailored advice to help you find the perfect spa.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <strong class="txt-giant">Exceptional Customer Support:</strong>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Dedicated to ensuring your satisfaction from purchase through maintenance.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <strong class="txt-giant">Customizable Options:</strong>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Variety of models, sizes, and features to suit every need and budget.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <strong class="txt-giant">Competitive Pricing:</strong>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Offers excellent value with competitive pricing and flexible financing options.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <strong class="txt-giant">Energy-Efficient Solutions:</strong>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Eco-friendly models help you save on energy costs while enjoying your spa.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Premium Quality Products:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Offers a wide selection of high-end Hot Spring hot tubs and swim spas.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Personalized Service:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Our knowledgeable staff provide tailored advice to help you find the perfect spa.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Exceptional Customer Support:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Dedicated to ensuring your satisfaction from purchase through maintenance.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Customizable Options:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Variety of models, sizes, and features to suit every need and budget.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Local Maintenance and Support:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Fast and reliable service from our Albuquerque-based team.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Competitive Pricing:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Offers excellent value with competitive pricing and flexible financing options.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Energy-Efficient Solutions:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Eco-friendly models help you save on energy costs while enjoying your spa.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Community Involvement:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Active participation in the Albuquerque community and commitment to local growth.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Comprehensive Warranties:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Peace of mind with extensive warranties on all products.</p>
-                    </div>
+                    
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -513,6 +489,75 @@
         </div>
     </section>
 
+    <section id="sectionsisters" class="bg-section mt-3 p-3" style="min-height: 60vh;">
+        <div class="container lg" >
+            <section class="mt-2 txt-giant mb-1 pb-3 center txt-center" style="border-bottom: 1px solid #ccc;">
+                <h4>4 Locations to serve you.</h4>
+                <h5>1000+ Reviews</h5>
+            </section>
+            <section class="grid" >
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a class="ds-block mb-1 mt-1"  href="https://carefreenm.com" >
+                        <img class=" mt-1"  src="../common/img/carefree.png" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  target="_blank" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8">
+                        6301 Menaul Blvd NE <br />Albuquerque, NM 87110
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="tel: (505) 883 2999" >(505) 883 2999</a>
+                    <ul class="hours"><li>10 AM – 5 PM Mon-Sat</li><li>Sun (12 – 4 PM)</li></ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://carefreenm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a  class="ds-block mb-1 mt-1"  href="https://calderaspasnm.com" >
+                        <img class="mt-1"  src="../common/img/caldera.webp" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="https://maps.app.goo.gl/k7zhL5xgN479MttT9" target="_blank">5310 Menaul Blvd. NE <br /> Albuquerque, NM 87110</a> 
+                    <a class="ds-block mb-1 mt-1"  href="tel:+15058839722">(505) 883 9722</a>
+                    <ul  class="hours"><li>10 AM – 5 PM Mon-Sat</li><li>Sun (12 – 4 PM)</li></ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://calderaspasnm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a  class="ds-block mb-1 mt-1"  href="https://hotspringspasnm.com" >
+                        <img class=" mt-1"  src="../common/img/hotspring.svg" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  target="_blank" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8">
+                        6301 Menaul Blvd NE <br />
+                        Albuquerque, NM 87110
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="tel:+5058890222">(505) 889-0222</a>
+                    <ul class="hours">  
+                        <li>10 AM – 5 PM Mon-Sat</li>  
+                        <li>Sun (12 – 4 PM)</li>  
+                        </ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://hotspringspasnm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a class="ds-block mb-1 mt-1" href="https://sf.hotspringspasnm.com" >
+                        <img class=" mt-1"  src="../common/img/hotspring.svg" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  target="_blank" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8">
+                        3985 Cerrillos Rd <br />
+                        Santa Fe, NM 87507
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="tel:+15054380099">(505) 438-0099</a>
+                    <ul  class="hours">
+                        <li>10 AM – 5 PM Tue-Sat</li>  
+                        <li>Sun & Mon (Closed)</li>  
+                        </ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://sf.hotspringspasnm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+            </section>
+        </div>
+    </section>
+
     <footer class="bg-primary p-3" >
         <div class="grid">
             <div class="col-md-3" >
@@ -526,7 +571,7 @@
                     </a>     
                 </address> 
                 <span>
-                    <a class="txt-white" href="tel:+15054380099">(505) 889-0222</a>
+                    <a class="txt-white" href="tel:+15058890222">(505) 889-0222</a>
                 </span>  
             </div>
             <div class="col-md-3" >

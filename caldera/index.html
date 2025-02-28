@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="./root.css">
     <link rel="stylesheet" href="../common/styles.css">
 
@@ -28,16 +30,16 @@
             "postalCode": "87110",
             "addressCountry": "US"
           },
-          "telephone": "+1-505-889-9722" 
+          "telephone": "+1-505-883-9722" 
         }
         </script>
 
     <style>
         #section1{
-            padding:25px;
+            padding:100px 25px 25px 25px;
             background-blend-mode: overlay;
             background-color: #4d4d4d;
-            min-height: 80vh !important;
+            min-height: max(600px,80vh) !important;
  
             place-content: center;
             align-items: center;
@@ -133,6 +135,11 @@
             color: black;
             padding: 15px 10px;
         }
+
+        #subheader{
+            padding: 5px;
+            color: #6c6d70
+        }
         
 
     </style>
@@ -140,12 +147,18 @@
 </head>
 <body>
 
+    <nav class="container flex between align-center p-1">
+        <a href="https://maps.app.goo.gl/k7zhL5xgN479MttT9" target="_blank"><i class="bi bi-geo-alt-fill"></i> <span class="ds-none-xs">5310 Menaul Blvd. NE</span><span class="ds-none-sm"> Albuquerque, NM 87110</span></a> 
+        <a  href="tel:+15058839722"><i class="bi bi-phone-fill"></i> (505) 883 9722</a>
+    </nav>
+        
+
     <header id="main-header" class="bg-primary h-2">
         <nav class="container flex between align-center">
             <a href="index.html" class="h-2"> 
                 <img class="h-1" style="width:260px;" src="./img/caldera.webp" />
             </a>
-            <section class="main-menu h-1" >
+            <section class="main-menu h-1 ds-none-md" >
                 <a class="menu-item" href="#home">Home</a>
                 <a class="menu-item" href="#about">Hot Tubs</a>
                 <a class="menu-item" href="#services">Swim Spas</a>
@@ -449,9 +462,9 @@
             <div class="grid" >
                 <section class="col-md-6 col-lg-4  txt-left" >
                     <h5 class="txt-giant mb-1" >Contact us to get started</h5>
-                    <p><a href="tel: (505) 889-0222" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                    <p><a href="tel: (505) 883 9722" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
                         <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0"/>
-                      </svg> Call (505) 889-0222</a></p>
+                      </svg> Call (505) 883 9722</a></p>
                 </section>
                 <section class="col-md-6 col-lg-8" >
                     <form action="submit.php" method="post" class="grid g-2">
@@ -493,20 +506,88 @@
         </div>
     </section>
 
+    <section id="sectionsisters" class="bg-section mt-3 p-3" style="min-height: 60vh;">
+        <div class="container lg" >
+            <section class="mt-2 txt-giant mb-1 pb-3 center txt-center" style="border-bottom: 1px solid #ccc;">
+                <h4>4 Locations to serve you.</h4>
+                <h5>1000+ Reviews</h5>
+            </section>
+            <section class="grid" >
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a class="ds-block mb-1 mt-1"  href="https://carefreenm.com" >
+                        <img class=" mt-1"  src="../common/img/carefree.png" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  target="_blank" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8">
+                        6301 Menaul Blvd NE <br />Albuquerque, NM 87110
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="tel: (505) 883 2999" >(505) 883 2999</a>
+                    <ul class="hours"><li>10 AM – 5 PM Mon-Sat</li><li>Sun (12 – 4 PM)</li></ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://carefreenm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a  class="ds-block mb-1 mt-1"  href="https://calderaspasnm.com" >
+                        <img class="mt-1"  src="../common/img/caldera.webp" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="https://maps.app.goo.gl/k7zhL5xgN479MttT9" target="_blank">5310 Menaul Blvd. NE <br /> Albuquerque, NM 87110</a> 
+                    <a class="ds-block mb-1 mt-1"  href="tel:+15058839722">(505) 883 9722</a>
+                    <ul  class="hours"><li>10 AM – 5 PM Mon-Sat</li><li>Sun (12 – 4 PM)</li></ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://calderaspasnm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a  class="ds-block mb-1 mt-1"  href="https://hotspringspasnm.com" >
+                        <img class=" mt-1"  src="../common/img/hotspring.svg" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  target="_blank" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8">
+                        6301 Menaul Blvd NE <br />
+                        Albuquerque, NM 87110
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="tel:+5058890222">(505) 889-0222</a>
+                    <ul class="hours">  
+                        <li>10 AM – 5 PM Mon-Sat</li>  
+                        <li>Sun (12 – 4 PM)</li>  
+                        </ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://hotspringspasnm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a class="ds-block mb-1 mt-1" href="https://sf.hotspringspasnm.com" >
+                        <img class=" mt-1"  src="../common/img/hotspring.svg" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  target="_blank" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8">
+                        3985 Cerrillos Rd <br />
+                        Santa Fe, NM 87507
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="tel:+15054380099">(505) 438-0099</a>
+                    <ul  class="hours">
+                        <li>10 AM – 5 PM Tue-Sat</li>  
+                        <li>Sun & Mon (Closed)</li>  
+                        </ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://sf.hotspringspasnm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+            </section>
+        </div>
+    </section>
+
     <footer class="bg-primary p-3" >
         <div class="grid">
             <div class="col-md-3" >
-                <img src="./img/logo.svg" style="width: 250px;" />
+                <img src="./img/caldera.webp" style="width: 250px;" />
             </div>
             <div class="col-md-6" >
                 <address>
                     <a target="_blank" class="txt-white" title="Click for Directions" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8" >
-                        6301 Menaul Blvd NE
-                        Albuquerque, NM 87110
+                        5310 Menaul Blvd. Building A. NE Albuquerque, NM 87110
                     </a>     
                 </address> 
                 <span>
-                    <a class="txt-white" href="tel:+15054380099">(505) 889-0222</a>
+                    <a class="txt-white" href="tel:+15058839722">(505) 883 9722</a>
                 </span>  
             </div>
             <div class="col-md-3" >

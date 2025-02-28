@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./root.css">
     <link rel="stylesheet" href="../common/styles.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <script src="../common/script.js" ></script>
     
     <script type="application/ld+json">
@@ -34,12 +36,11 @@
 
     <style>
 
-
-
         #section1{
             padding:25px;
             max-width: 1800px;
             margin: 0 auto;
+            min-height: max(600px,80vh) !important;
         }
 
         .section1-a{
@@ -173,7 +174,7 @@
             <a href="index.html" class="h-2"> 
                 <img class="h-1" style="width:160px;" src="./img/logo.png" />
             </a>
-            <section class="main-menu h-1" >
+            <section class="main-menu h-1 ds-none-md" >
                 <a class="menu-item" href="#home">Home</a>
                 <a class="menu-item" href="#about">Hot Tubs</a>
                 <a class="menu-item" href="#services">Swim Spas</a>
@@ -186,12 +187,11 @@
         <nav class="container flex between">
             <address>
                 <a target="_blank" title="Click for Directions" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8" >
-                    6301 Menaul Blvd NE
-                    Albuquerque, NM 87110
+                    <i class="bi bi-geo-alt-fill"></i> <span class="ds-none-sm">6301 Menaul Blvd NE </span><span class="ds-none-sm">Albuquerque, NM 87110</span>
                 </a>     
             </address> 
             <span>
-                <a href="tel:+5058890222">(505) 889-0222</a>
+                <a href="tel:+5058890222"><i class="bi bi-phone-fill"></i> (505) 889-0222</a>
             </span>  
         </nav>
     </header>
@@ -288,14 +288,6 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <strong class="txt-giant">Local Maintenance and Support:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Fast and reliable service from our Albuquerque-based team.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
                         <strong class="txt-giant">Competitive Pricing:</strong>
                     </button>
                     <div class="accordion-content">
@@ -308,22 +300,6 @@
                     </button>
                     <div class="accordion-content">
                         <p>Eco-friendly models help you save on energy costs while enjoying your spa.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Community Involvement:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Active participation in the Albuquerque community and commitment to local growth.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <strong class="txt-giant">Comprehensive Warranties:</strong>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Peace of mind with extensive warranties on all products.</p>
                     </div>
                 </div>
             </div>
@@ -412,19 +388,19 @@
                 <img src="./img/vitaspalogo.png" class="img-w150" >
             </section>
             <section class="grid txt-center mt-3" >
-                <div class="col-md-3 slide-left" >
+                <div class="col-md-6 col-lg-3 slide-left" >
                     <h4>Shop 700 Series</h4>
                     <img class="responsive mt-1" src="./img/vitaspa-homepage-700series2.jpg" />
                 </div> 
-                <div class="col-md-3 slide-left" >
+                <div class="col-md-6 col-lg-3 slide-left" >
                     <h4>Shop 500 Series</h4>
                     <img class="responsive mt-1" src="./img/vitaspa-homepage-500series2.jpg" />
                 </div> 
-                <div class="col-md-3 slide-left" >
+                <div class="col-md-6 col-lg-3 slide-left" >
                     <h4>Shop 300 Series</h4>
                     <img class="responsive mt-1" src="./img/vitaspa-homepage-300series2.jpg" />
                 </div> 
-                <div class="col-md-3 slide-left" >
+                <div class="col-md-6 col-lg-3 slide-left" >
                     <h4>Shop 100 Series</h4>
                     <img class="responsive mt-1" src="./img/vitaspa-homepage-100series2.jpg" />
                 </div> 
@@ -532,6 +508,75 @@
         </div>
     </section>
 
+    <section id="sectionsisters" class="bg-section mt-3 p-3" style="min-height: 60vh;">
+        <div class="container lg" >
+            <section class="mt-2 txt-giant mb-1 pb-3 center txt-center" style="border-bottom: 1px solid #ccc;">
+                <h4>4 Locations to serve you.</h4>
+                <h5>1000+ Reviews</h5>
+            </section>
+            <section class="grid" >
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a class="ds-block mb-1 mt-1"  href="https://carefreenm.com" >
+                        <img class=" mt-1"  src="../common/img/carefree.png" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  target="_blank" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8">
+                        6301 Menaul Blvd NE <br />Albuquerque, NM 87110
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="tel: (505) 883 2999" >(505) 883 2999</a>
+                    <ul class="hours"><li>10 AM – 5 PM Mon-Sat</li><li>Sun (12 – 4 PM)</li></ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://carefreenm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a  class="ds-block mb-1 mt-1"  href="https://calderaspasnm.com" >
+                        <img class="mt-1"  src="../common/img/caldera.webp" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="https://maps.app.goo.gl/k7zhL5xgN479MttT9" target="_blank">5310 Menaul Blvd. NE <br /> Albuquerque, NM 87110</a> 
+                    <a class="ds-block mb-1 mt-1"  href="tel:+15058839722">(505) 883 9722</a>
+                    <ul  class="hours"><li>10 AM – 5 PM Mon-Sat</li><li>Sun (12 – 4 PM)</li></ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://calderaspasnm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a  class="ds-block mb-1 mt-1"  href="https://hotspringspasnm.com" >
+                        <img class=" mt-1"  src="../common/img/hotspring.svg" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  target="_blank" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8">
+                        6301 Menaul Blvd NE <br />
+                        Albuquerque, NM 87110
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="tel:+5058890222">(505) 889-0222</a>
+                    <ul class="hours">  
+                        <li>10 AM – 5 PM Mon-Sat</li>  
+                        <li>Sun (12 – 4 PM)</li>  
+                        </ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://hotspringspasnm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+                <div class="col-md-6 col-lg-3 slide-left m-2" >
+                    <a class="ds-block mb-1 mt-1" href="https://sf.hotspringspasnm.com" >
+                        <img class=" mt-1"  src="../common/img/hotspring.svg" />
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  target="_blank" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8">
+                        3985 Cerrillos Rd <br />
+                        Santa Fe, NM 87507
+                    </a>
+                    <a class="ds-block mb-1 mt-1"  href="tel:+15054380099">(505) 438-0099</a>
+                    <ul  class="hours">
+                        <li>10 AM – 5 PM Tue-Sat</li>  
+                        <li>Sun & Mon (Closed)</li>  
+                        </ul>
+                    <a class="ds-block btn accent mb-1 mt-1"  href="https://sf.hotspringspasnm.com" >
+                        Visit Store Website
+                    </a>
+                </div> 
+            </section>
+        </div>
+    </section>
+
     <footer class="bg-primary p-3" >
         <div class="grid">
             <div class="col-md-3" >
@@ -539,13 +584,13 @@
             </div>
             <div class="col-md-6" >
                 <address>
-                    <a target="_blank" class="txt-white" title="Click for Directions" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8" >
+                    <a target="_blank" title="Click for Directions" href="https://maps.app.goo.gl/RdGvKW1UE8ZZfbjg8" >
                         6301 Menaul Blvd NE
                         Albuquerque, NM 87110
                     </a>     
                 </address> 
                 <span>
-                    <a class="txt-white" href="tel:+15054380099">(505) 889-0222</a>
+                    <a  href="tel:+15054380099">(505) 889-0222</a>
                 </span>  
             </div>
             <div class="col-md-3" >

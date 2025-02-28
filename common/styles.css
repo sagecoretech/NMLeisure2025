@@ -53,6 +53,24 @@ button:hover {
     margin: 0 auto;
 }
 
+/* COMMON */
+#sectionsisters img{
+    object-fit: contain;
+    height:70px; 
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+
+    #sectionsisters img{
+        object-fit: contain;
+        height:auto; 
+        width: 100%;
+    }
+
+    
+}
+
 /* BACKGROUNDS */
 .bg-primary{
     background-color: var(--color-primary);
@@ -79,6 +97,12 @@ button:hover {
     position:relative;
     top: -100px;
     min-height: 300px;
+}
+
+/* DISPLAY HELPERS */
+
+.ds-block{
+    display:block;
 }
 
 /* BUTTONS */
@@ -806,3 +830,48 @@ nav a{
     resize: none;
 }
 
+/* Hours */
+.hours{
+    text-indent: none;
+}
+
+.hours li{
+    list-style-type: none;
+}
+
+/* RESPONSIVE AND MOBILE */
+/* Micro Breakpoint (Foldable phones or small devices) */
+  @media (max-width: 480px) {
+    .ds-none-xs { display: none !important; }
+  }
+  
+  /* Small screens (mobile) */
+  @media (max-width: 576px) {
+    .ds-none-sm { display: none !important; }
+
+    .container.sm{
+        max-width: max( 100vw, calc(var(--container-max-width) * 0.5));
+    }
+    
+  }
+  
+  /* Medium screens (tablet) */
+  @media  (max-width: 991px) {
+    .ds-none-md { display: none !important; }
+  }
+  
+  /* Large screens (desktop) */
+  @media (max-width: 1599px) {
+    .ds-none-lg { display: none !important; }
+  }
+  
+  /* Extra large screens */
+  @media (max-width: 2599px) {
+    .ds-none-xl { display: none !important; }
+  }
+  
+  /* Ultra-wide screens */
+  @media (min-width: 2600px) {
+    .ds-none-xxl { display: none !important; }
+  }
+  
