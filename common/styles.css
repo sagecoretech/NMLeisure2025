@@ -489,9 +489,11 @@ nav a{
     width: 100%;
   }
   
-  .grid.uniform {
-    grid-auto-rows: 1fr;
-  }
+  @media (min-width: 576px) {
+    .grid.uniform {
+        grid-auto-rows: 1fr;
+    }
+}
   
   .grid > * {
     grid-column: span 12;
